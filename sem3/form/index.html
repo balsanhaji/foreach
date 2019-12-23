@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="main.js" defer></script>
+	<title>Formulaire</title>
+</head>
+<body>
+	<form>
+		<p>
+			<input type="text" name="nom" id="nom" placeholder="Nom" />
+		</p>
+		<p>
+			<input type="number" name="age" id="age" placeholder="Âge" min="0" max="100" />
+		</p>
+		<p>
+			<input type="checkbox" name="checkbox" id="checkbox" />
+			<label for="checkbox">S'abonner</label>
+		</p>
+		<p>
+			<select name="pets" id="pet-select">
+				<option value="">--Please choose an option--</option>
+				<option value="dog">Dog</option>
+				<option value="cat">Cat</option>
+				<option value="hamster">Hamster</option>
+				<option value="parrot">Parrot</option>
+				<option value="spider">Spider</option>
+				<option value="goldfish">Goldfish</option>
+			</select>
+		</p>
+
+		<p>
+			<input type="submit" value="Valider" />
+		</p>
+	  </form>
+</body>
+</html>

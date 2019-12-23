@@ -1,0 +1,82 @@
+{
+  "jeux": [
+    {
+      "id": 123,
+      "nom": "A journey with Coco",
+      "images": [
+        "http://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2018-05/coco_4.jpg",
+        "https://www.benzinemag.net/wp-content/uploads/2017/12/coco-pixar-miguel-chien.jpg",
+        "https://lumiere-a.akamaihd.net/v1/images/eu_coco_7things_gl_7_r_f4e96723.jpeg?region=0,0,1440,810"
+      ],
+      "prix": {
+        "devise": "EUR",
+        "montant": 52.99
+      },
+      "achats": 2123,
+      "note": {
+        "moyenne": 3.5,
+        "votants": 1925
+      },
+      "description": "",
+      "types": [
+        "plateforme",
+        "action",
+        "aventure"
+      ],
+      "public": "jeunesse",
+      "sortie": 1539302400,
+      "succes": [
+        {
+          "score": 100,
+          "conditions": "Des conditons"
+        },
+        {
+          "score": 50,
+          "conditions": "Des conditons"
+        },
+        {
+          "score": 150,
+          "conditions": "Des conditons"
+        },
+        {
+          "score": 125,
+          "conditions": "Des conditons"
+        },
+        {
+          "score": 400,
+          "conditions": "Des conditons"
+        },
+        {
+          "score": 100,
+          "conditions": "Des conditons"
+        },
+        {
+          "score": 100,
+          "conditions": "Des conditons"
+        },
+        {
+          "score": 100,
+          "conditions": "Des conditons"
+        },
+        {
+          "score": 250,
+          "conditions": "Des conditons"
+        },
+        {
+          "score": 450,
+          "conditions": "Des conditons"
+        }
+      ]
+    }
+  ],
+  "collection": [
+    {
+      "nom": "A journey with Coco",
+      "id": 1
+    },
+    {
+      "nom": "A journey with Coco",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+	<script src="main.js" defer></script>
+	<style>
+		body {
+			font-family: 'Solway', serif;
+		}
+
+		#weather {
+			width: 35%;
+			border: 1px solid #00ffb7;
+			border-radius: 5px;
+			padding: 10px;
+			background: linear-gradient(to top, #0ff, #fff, #00ffb7, #fff);
+			cursor: pointer;
+		}
+
+		#weather h1 {
+			text-align: center;
+			font-weight:  900;
+		}
+		#today, #desc {
+			text-align: center;
+		}
+
+		#datas {
+			display: flex;
+			align-items: center;
+		}
+
+		#datas i {
+			font-size: 5em;
+			color: #ddd;
+		}
+		#datas .column {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#temp {
+			font-size: 5em;
+			margin-left: 20px;
+		}
+		#desc {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<h1>Mon titre</h1>
+
+	<div>Compteur : <span id="increment">0</span>
+		<p><button id="demarrer">Démarrer</button> <button id="stop">Stop</button></p>
+	</div>
+
+	<div>
+		<ul id="reservations"></ul>
+	</div>
+
+	<form id="ajouter-une-reservation">
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom">
+        <label for="adultes">Nombre d'adultes</label>
+        <input type="number" name="adultes" id="adultes">
+        <label for="dates">Dates</label>
+        <input type="text" name="dates" id="dates">
+        <input type="submit" value="Ajouter">
+	</form>
+	
+	<p><hr /></p>
+
+	<br /><br /><br />
+
+	<form id="actualiser-ville">
+		<input type="text" name="ville" id="ville" placeholder="Ville">
+		<input type="submit" value="Afficher" id="changer-ville" />
+	</form>
+
+	<br /><br /><br />
+
+	<div id="weather">
+		<h1>Météo à <span id="city"></span>, <span id="country"></span></h1>
+
+		<div id="today"></div>
+		<div id="desc"></div>
+
+		<p id="datas">
+			<div><img id="wicon" src="" alt="Weather icon"></div>
+			<div><span id="temp"></span></div>
+			<div class="column">
+				<span id="wind"></span>
+			</div>
+		</p>
+	</div>
+</body>
+</html>

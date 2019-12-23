@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!-- TODO: Injecter le nom du jeu dans le titre sous la forme "MAETS - Le nom du jeu" -->
+    <title>MAETS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <article id="jeu" class="container content">
+        <header>
+            <!-- TODO: Injecter le titre du jeu -->
+            <h1 id="titre-du-jeu"></h1>
+            <!-- TODO: IMAGES -->
+        </header>
+        <main class="columns is-multiline">
+            <section id="liste-de-souhaits" class="column is-full">
+                <!-- TODO: Implémenter l'ajout à la liste de souhaits -->
+                <button class="button">
+                    <span class="icon">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                    <span>Ajouter à ma liste de souhaits</span>
+                </button>
+                <!-- TODO: Injecter le nombre d'utilisateurs souhaitant le jeu -->
+                <span id="compte-utilisateurs-souhaitant-le-jeu"></span>
+            </section>
+            <section id="notes" class="column is-full">
+                    <!-- TODO: Injecter la note du jeu -->
+                <span id="note-jeu"></span>
+            </section>
+            <section id="ajouter-a-la-collection" class="is-full">
+                <!-- TODO: Implémenter l'ajout du jeu à la collection -->
+                <button id="ajouter" class="button">Ajouter</button>
+                <!-- TODO: Injecter le nombre d'utilisateurs ayant le jeu -->
+                <span id="compte-utilisateurs-ayant-le-jeu"></span>
+            </section>
+            <section id="description" class="column is-full">
+                <h2>Description</h2>
+                <!-- TODO: Injecter les informations du jeu -->
+                <p id="presentation"></p>
+                <p>Type: <span id="type-du-jeu"></span></p>
+                <p>Public: <span id="public-cible"></span></p>
+                <p>Date de disponibilité: <span id="date-de-disponibilite"></span></p>
+            </section>
+            <section id="success" class="column is-full">
+                <h2>Succès disponibles</h2>
+                <ul>
+                    <!-- TODO: Injecter les succès sous la forme suivante: -->
+                    <!-- <li class="tag is-link">Succès 1 - 100 pts</li> -->
+                </ul>
+            </section>
+        </main>
+    </article>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</body>
+</html>

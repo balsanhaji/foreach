@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Mon site html</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Commentaire -->
+        <h1>Mon site html</h1>
+
+        <h2>Paragraphe</h2>
+
+        <p class="m-left">
+           <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /><em>Ut</em> enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br />
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br /> <mark>Excepteur</mark> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <h2>Listes</h2>
+
+        <ul class="m-left">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>
+                <ol>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ol>
+            </li>
+        </ul>
+
+        <ol class="m-left">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Liens</h2>
+
+        <p class="m-left">
+            <a href="https://www.google.fr" aria-label="Google">Page externe Google</a><br />
+            <a href="cv.html" aria-label="cv">Page interne CV</a><br />
+            <a href="tel:0102030405" aria-label="telephone">Téléphone</a><br />
+            <a href="mailto:contact@example.com" aria-label="contact@example.com">Email</a><br />
+            <a href="link.html" aria-label="download" download>Download</a>
+        </p>
+
+        <h2>Tableau</h2>
+
+        <table class="m-left">
+            <tr>
+                <th>Ville</th>
+                <th>Département</th>
+                <th>Matin</th>
+                <th>Après-midi</th>
+            </tr>
+            <tr>
+                <td>Lille</td>
+                <td rowspan="2">59</td>
+                <td>Pluie</td>
+                <td>Nuageux</td>
+            </tr>
+            <tr>
+                <td>Calais</td>
+                <td colspan="2">Ensoleillé</td>
+            </tr>
+            <tr>
+                <td>Arras</td>
+                <td>62</td>
+                <td>Pluie</td>
+                <td>Averses</td>
+            </tr>
+        </table>
+
+        <h2>Médias</h2>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Ch%C3%A2teau_d%27Oy%C3%A9_%2871%29_-_2.JPG/420px-Ch%C3%A2teau_d%27Oy%C3%A9_%2871%29_-_2.JPG" alt="Château d'Oyé" /><br /><br />
+
+        <img src="img-externe.jpg" alt="Wagram" /><br /><br />
+
+        <figure class="m-left">
+            <img src="canard.jpg" alt="Canard" />
+            <figcaption>Un canard.</figcaption>
+        </figure>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YiQWq3oRxPY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>DIVs</h2>
+
+        <div class="m-left">
+            <p>Mon <span>super</span> paragraphe</p>
+        </div>
+
+        <h2>Formulaires</h2>
+
+		<div class="m-left">
+			<form method="POST" action="form.php">
+				<div>
+					<label for="pseudo">Entrez un nom : </label><input type="text" id="pseudo" name="nom" placeholder="Pseudo" />
+				</div>
+				<div>
+					<label for="mdp">Entrez un mot de passe : </label><input type="password" id="mdp" name="motDePasse" placeholder="Mot de passe" required>
+				</div>
+				<div>
+					<label for="email">Entrez un email : </label><input type="email" id="email" name="email" placeholder="Email" />
+				</div>
+				<div>
+					<input type="submit" id="submit1" name="submit" value="Envoyer" />
+				</div>
+			</form>
+		</div>
+
+		<div class="m-left">
+			<form method="POST" action="form.php">
+				<div>
+					<label for="number">Entrez un nombre : </label><input type="number" id="number" name="number" />
+				</div>
+				<!-- <div>
+					<label for="date">Entrez une date : </label><input type="date" id="date" name="date" />
+				</div> -->
+				<div>
+					<label for="checkbox1">Choix 1 : </label><input type="checkbox" id="checkbox1" name="checkbox" value="checkbox1" /><br />
+					<label for="checkbox2">Choix 2 : </label><input type="checkbox" id="checkbox2" name="checkbox" value="checkbox2" />
+				</div>
+				<div>
+					<label for="radio1">Choix A : </label><input type="radio" id="radio1" name="radio" value="radio1" /><br />
+					<label for="radio2">Choix B : </label><input type="radio" id="radio2" name="radio" value="radio2" />
+				</div>
+				<div>
+					<input type="submit" id="submit2" name="submit" value="Envoyer" />
+				</div>
+			</form>
+		</div>
+    </body>
+</html>

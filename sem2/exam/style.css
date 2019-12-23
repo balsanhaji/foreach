@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html, body {
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* === header */
+
+header {
+	display: flex;
+	height: 5em;
+	box-shadow: 0px 1px 10px rgba(0,0,0,.5);
+	margin-bottom: 5em;
+}
+
+header .logo {
+	margin-left: 5em;
+	align-self: center;
+}
+
+header .logo img {
+	width: 30%;
+	height: auto;
+}
+
+header .nav {
+	margin-right: 3em;
+	flex: 2;
+	align-self: center;
+}
+
+header .nav a {
+	color: initial;
+	text-decoration: none;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: end;
+	list-style-type: none;
+	align-content: center;
+}
+@media screen and (max-width: 640px) {
+	header nav ul {
+		flex-direction: column;
+	}
+}
+
+header nav ul li {
+	padding: 0 30px;
+}
+
+/* === section */
+
+#jeu {
+	display: flex;
+	flex-wrap: wrap;
+	width: 85%;
+	margin: 0 auto 5em auto;
+}
+
+	#jeu .img-jeu {
+		flex: 1;
+	}
+	#jeu .datas-jeu {
+		display: flex;
+		flex-direction: column;
+		flex: 2;
+		align-self: center;
+	}
+		#jeu .datas-jeu .titre-jeu {
+			font-size: 36px;
+		}
+		#jeu .datas-jeu .prix-jeu {
+			margin-top: 20px;
+			font-size: 48px;
+			color: #4183D9;
+			font-weight: bold;
+		}
+		#jeu .datas-jeu .desc-jeu {
+			margin-top: 20px;
+			text-align: justify;
+		}
+		#jeu .datas-jeu .btns-jeu {
+			margin-top: 20px;
+		}
+		#jeu .datas-jeu .btns-jeu button:first-child {
+			height: 40px;
+			width: 15em;
+			background-color:	#4183d9;
+			color:	#fff;
+			border:0;
+			border-radius: 5px;
+			font-family: inherit;
+			text-transform: uppercase;
+			margin-right: 50px;
+		}
+		#jeu .datas-jeu .btns-jeu button:last-child {
+			height: 40px;
+			width: 15em;
+			background-color: #FA416D;
+			color:	#fff;
+			border:0;
+			border-radius: 5px;
+			font-family: inherit;
+			text-transform: uppercase;
+		}
+
+/* === iframe */
+
+#video {
+	display: flex;
+	justify-content: center;
+}
+
+/* === caracteristiques */
+
+#caracteristiques {
+	width: 90%;
+	margin: 0 auto 5em auto;
+}
+
+#caracteristiques h2 {
+	color: #4183D9;
+}
+
+#caracteristiques table {
+	width: 100%;
+}
+	#caracteristiques > table, tr, td {
+		border-collapse: collapse;
+		border: 1px solid #8C8C8C;
+	}
+	#caracteristiques table td {
+		width: 50%;
+		padding: 20px 50px;
+	}
+	#caracteristiques .td-left {
+		background: #C4C4C4;
+		text-align: center;
+		font-weight: bold;
+	}
+	#caracteristiques .td-right {
+		text-align: left;
+	}
+
+/* === suggestions */
+
+#suggestions {
+	width: 90%;
+	margin: 0 auto 5em auto;
+}
+	#suggestions h2 {
+		color: #4183D9;
+	}
+	#suggestions #boxes {
+		display: flex;
+		justify-content: space-between;
+	}
+	@media screen and (max-width: 640px) {
+		#suggestions #boxes {
+			flex-direction: column;
+		}
+	}
+		#suggestions #boxes .box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 20%;
+			height: 350px;
+			border: 1px solid #aaa;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 5px;
+			padding: 10px;
+			text-align: center;
+		}
+		#suggestions #boxes .box img {
+			flex: 2;
+		}
+		#suggestions #boxes .box > h5, h4 {
+			margin: 10px 0;
+		}
+		#suggestions #boxes .box button {
+			height: 40px;
+			width: 90%;
+			background-color:	#4183d9;
+			color:	#fff;
+			border:0;
+			border-radius: 5px;
+			font-family: inherit;
+			text-transform: uppercase;
+		}
+
+/* === liens */
+
+#liens {
+	width: 90%;
+	margin: 0 auto 5em auto;
+}
+
+#liens h2 {
+	color: #4183D9;
+}
+
+#liens ul li {
+	padding-left: 20px;
+}
+	#liens ul li a {
+		color: #000;
+	}
+
+/* === footer */
+
+footer {
+	position: absolute;
+	right: 0;
+	left: 0;
+	background-color:	#000;
+	color:	#fff;
+	text-align: center;
+	padding: 3em;
+}

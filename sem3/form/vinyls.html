@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+		<script src="main.js" defer></script>
+</head>
+<body>
+	<main>
+		<h1>Collection de vinyls !</h1>
+		<article id="collection">
+			<ul>
+				<li>
+					<article class="vinyl">
+						<header>
+							<h2></h2>
+							<button class="supprimer">Supprimer</button>
+						</header>
+						<section class="informations">
+							<ul>
+								<li class="prix"></li>
+							</ul>
+						</section>
+					</article>
+				</li>
+				<li>
+					<article class="vinyl">
+						<header>
+							<h2></h2>
+							<button class="supprimer">Supprimer</button>
+						</header>
+						<section class="informations">
+							<ul>
+								<li class="prix"></li>
+							</ul>
+						</section>
+					</article>
+				</li>
+			</ul>
+		</article>
+
+		<form id="ajouter-un-vinyl">
+			<h2>Ajouter un vinyl</h2>
+			<label for="titre">Titre</label>
+			<input id="titre" type="text"/>
+			<label for="prix">Prix</label>
+			<input id="prix" type="number" step="0.01"/>
+			<button class="ajouter">Ajouter</button>
+		</form>
+	</main>
+</body>
+</html>
