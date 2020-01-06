@@ -4,12 +4,55 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script src="vue.js" defer></script>
+	<script src="../vue.js" defer></script>
+	<script src="main.js" defer></script>
 	<title>Vue.js</title>
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
 	<main id="app">
-		Mon application
+		<h1 v-bind:class="mesClasses">{{titre}}</h1>
+
+		<div>
+			<input v-model="titre" type="text" placeholder="Indiquez le titre" />
+
+			<button v-bind:disabled="boutonDesactive">Mon bouton</button>
+		</div>
+
+		<div>
+			<img v-bind:src="sourceDeLimage" alt="img" />
+		</div>
+
+		<p v-if="afficherMessage">
+			Bienvenue sur notre app !
+		</p>
+		<p v-else>
+			Veuillez mettre à jour l'application !
+		</p>
+
+		<div>
+			<ul>
+				<li v-for="(v,k) in genre">
+					{{v}}
+				</li>
+			</ul>
+		</div>
+
+		<div>
+			<ul>
+				<li v-for="f in formes" v-bind:key="formes.id">
+					{{f.id}}: {{f.nom}}
+				</li>
+			</ul>
+		</div>
+
+		<div>
+			<ul>
+				<li v-for="(a,k) in adresse" :key="k">
+					{{k}}: {{a}}
+				</li>
+			</ul>
+		</div>
 	</main>
 </body>
 </html>
