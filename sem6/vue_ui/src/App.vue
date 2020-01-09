@@ -6,7 +6,7 @@
     <br /><br />
     <VmButton texte="Mon bouton"></VmButton><br />
     <VmButton texte="Mon bouton outline" outline></VmButton><br />
-    <VmButton texte="Mon bouton clear" clear></VmButton>
+    <VmButton texte="Mon bouton clear" @click="clic" clear></VmButton>
   </div>
 </template>
 
@@ -26,6 +26,11 @@ export default {
   components: {
     VmHeading,
     VmButton
+  },
+  methods: {
+    clic(e) {
+      console.log('click',e);
+    }
   }
 };
 </script>

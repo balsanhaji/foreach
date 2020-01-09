@@ -1,5 +1,5 @@
 <template>
-	<button :class="{'button-outline' : outline, 'button-clear': clear}">{{texte}}</button>
+	<button :class="{'button-outline' : outline, 'button-clear': clear}" @click="btn">{{texte}}</button>
 </template>
 
 <script>
@@ -14,6 +14,11 @@ export default {
 		},
 		clear: {
 			type: Boolean
+		}
+	},
+	methods: {
+		btn(e) {
+			this.$emit('click',e);
 		}
 	}
 	// computed: {
