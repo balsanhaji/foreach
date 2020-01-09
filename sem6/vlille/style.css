@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+ul {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+#flex {
+	display: flex;
+}
+
+#retraits {
+	width: 60%;
+	margin: auto;
+	border-color: #e1251bc2;
+}
+
+#retraits table {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+#retraits table th {
+	height: 2em;
+	background: #e1251b;
+	box-shadow: inset 0px 0px 30px #e1251b;
+	background: #ffbebb;
+}
+
+#retraits table td {
+	text-align: left;
+	height: 1.5em;
+}
+
+#retraits table tr:nth-child(even) {
+	background: #ffbebb;
+}
+
+#retraits table td:last-child {
+	text-align: center;
+	font-weight: bold;
+}
+
+#retrait {
+	width: 20%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	border-color: #e1251bc2;
+}
+
+#retrait select {
+	border: 2px solid	#e1251b;
+	display: inline-block;
+	font: inherit;
+	line-height: 2em;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-appearance: none;
+	width: 93%;
+	padding-left: 5px;
+	font-size: 15px;
+	color:	#73757b;
+}
+
+#retrait select.classic {
+	background-image: linear-gradient(45deg, transparent 50%, #f2bdbb 50%), linear-gradient(135deg, #f2bdbb 50%, transparent 50%), linear-gradient(to right, #e1251b, #e1251b);
+	background-position: calc(100% - 15px) calc(.7em + 4px), calc(100% - 10px) calc(.7em + 4px), 100% 0;
+	background-size: 5px 5px, 5px 5px, 2em 2em;
+	background-repeat: no-repeat;
+}
+
+#retrait button {
+	width: 93%;
+	margin: auto;
+	height: 3em;
+	font-family: inherit;
+	border: 2px solid #e1251b;
+	font-weight: bold;
+	cursor: pointer;
+	color: #333;
+	
+	box-shadow: inset 0px 0px 30px #e1251b;
+	
+	background:	#ffbebb;
+}
+
+#retrait .valid {
+	text-align: center;
+}
+
+form {
+	text-align: center;
+}
+
+input[type=text] {
+	height: 3em;
+	width: 90%;
+	padding-left: 10px;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 2px solid #e1252b;
+}

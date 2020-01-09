@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script src="vue.js" defer></script>
+	<script src="../vue.js" defer></script>
 	<script src="main.js" defer></script>
 	<title>Formulaire Vue.js</title>
 	<link href="style.css" rel="stylesheet">
@@ -13,8 +13,6 @@
 	<main id="app">
 		<pre>{{$data}}</pre>
 		
-		{{nomComplet}}
-
 		<form>
 			<label for="nom">Nom :</label> 
 			<input v-model="utilisateur.nom" type="text" id="nom" placeholder="Nom" /><br />
@@ -50,22 +48,7 @@
 
 			<label for="number">Âge</label>
 			<input v-model.number="utilisateur.age" type="number" id="number" min="7" max="77" />
-
-			<br />
-			<br />
 		</form>
-
-		<button v-on:click="validerFormulaire" :disabled="!isValide">Envoyer</button>
-
-		<!-- <div>
-			<ul>
-				<li v-for="u in listeUtilisateurs">
-					{{u}}
-				</li>
-			</ul>
-		</div> -->
-
-		{{listeUtilisateurs}}
 	</main>
 </body>
 </html>

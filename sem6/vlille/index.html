@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="axios.min.js" defer></script>
+	<script src="vue.js" defer></script>
+	<script src="main.js" defer></script>
+	<title>V'Lille</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<main id="app">
+		<!-- <pre>{{$data}}</pre> -->
+
+		<h1>Appli V'Lille</h1>
+
+		<div id="flex">
+			<div id="retraits">
+				<!-- <legend>Retraits</legend> -->
+				<table>
+					<tr>
+						<th>Station</th>
+						<th>Nom</th>
+						<th>Prénom</th>
+						<th>Numéro de carte</th>
+					</tr>
+						<tr v-for="r in retraits" :key="retraits.id">
+							<td class="stationtd">{{r.station}}</td>
+							<td>{{r.abonné.nom}}</td>
+							<td>{{r.abonné.prenom}}</td>
+							<td>{{r.abonné.numeroCarte}}</td>
+						</tr>
+				</table>
+			</div>
+
+			<fieldset id="retrait">
+				<legend>Retrait</legend>
+				<form>
+					<p><input type="text" v-model="retrait.abonné.nom" id="nom" placeholder="Nom" /></p>
+					<p><input type="text" v-model="retrait.abonné.prenom" id="prenom" placeholder="Prénom" /></p>
+					<p><input type="text" v-model="retrait.abonné.numeroCarte" id="numeroCarte" placeholder="Numéro de carte" /></p>
+
+					<p>
+						<select v-model="retrait.station" class="classic">
+							<option disabled>Choisir une station</option>
+							<option v-for="s in stations" :value="s.nom">
+								{{s.nom}}
+							</option>
+						</select>
+					</p>
+				</form>
+
+				<br /><br />
+
+				<button v-on:click="validerFormulaire" :disabled="!isValide">Retirer un V'Lille</button>
+
+				<br /><br />
+
+				<p class="valid" v-if="isValide">
+					{{isValide}}
+				</p>
+			</fieldset>
+		</div>
+	</main>
+</body>
+</html>

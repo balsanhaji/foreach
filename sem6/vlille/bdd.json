@@ -1,0 +1,81 @@
+{
+  "stations": [
+    {
+      "id": 0,
+      "nom": "Porte des Postes"
+    },
+    {
+      "id": 1,
+      "nom": "Gare Lille Flandres"
+    },
+    {
+      "id": 2,
+      "nom": "Roubaix Eurotéléport"
+    }
+  ],
+  "retraits": [
+    {
+      "id": 0,
+      "station": "Porte des Postes",
+      "abonné": {
+        "nom": "Ferro",
+        "prenom": "Thomas",
+        "numeroCarte": "123456789"
+      }
+    },
+    {
+      "station": "Porte des Postes",
+      "abonné": {
+        "nom": "AL SANHAJI",
+        "prenom": "Bilal",
+        "numeroCarte": "56857"
+      },
+      "id": 1
+    },
+    {
+      "station": "Roubaix Eurotéléport",
+      "abonné": {
+        "nom": "Skywalker",
+        "prenom": "Anakin",
+        "numeroCarte": "98786"
+      },
+      "id": 2
+    },
+    {
+      "station": "Gare Lille Flandres",
+      "abonné": {
+        "nom": "Kenobi",
+        "prenom": "Obiwan",
+        "numeroCarte": "243956657"
+      },
+      "id": 3
+    },
+    {
+      "station": "Roubaix Eurotéléport",
+      "abonné": {
+        "nom": "Potter",
+        "prenom": "Harry",
+        "numeroCarte": "6868"
+      },
+      "id": 4
+    },
+    {
+      "station": "Roubaix Eurotéléport",
+      "abonné": {
+        "nom": "Jedusor",
+        "prenom": "Tom",
+        "numeroCarte": "666666"
+      },
+      "id": 5
+    },
+    {
+      "station": "Porte des Postes",
+      "abonné": {
+        "nom": "Arturo",
+        "prenom": "Arturo",
+        "numeroCarte": "6457688767"
+      },
+      "id": 6
+    }
+  ]
+}
