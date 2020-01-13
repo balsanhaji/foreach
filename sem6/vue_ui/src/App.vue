@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     clic(e) {
-      console.log('click',e);
+      console.log('clic',e);
     }
   }
 };

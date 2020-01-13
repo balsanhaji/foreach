@@ -1,0 +1,89 @@
+{
+  "bonplans": [
+    {
+      "id": 0,
+      "titre": "30% de remise immédiate sur votre séjour dans tous les hôtels du parc entre le 3 avril 2020 et le 2 janvier 2021",
+      "image": "https://static-pepper.dealabs.com/merchants/avatar_web_square_1024/avatar/1030_1.jpg",
+      "temperature": "333°",
+      "expireLe": "19/01/2020",
+      "code": "MONCODE",
+      "utilisateur": "Romitou",
+      "commentaires": [
+        {
+          "id": 0,
+          "utilisateur": "UtilisateurTrèsContent",
+          "message": "SUPER !"
+        },
+        {
+          "id": 1,
+          "utilisateur": "UtilisateurMéontent",
+          "message": "Le code ne fonctionne pas.."
+        }
+      ]
+    },
+    {
+      "titre": "60% de remise immédiate sur votre séjour dans tous les hôtels du parc entre le 20 janvier 2020 et le 30 janvier 2020",
+      "image": "",
+      "temperature": "",
+      "expireLe": "18/01/2020",
+      "code": "MONCODE",
+      "utilisateur": "Mewtwo",
+      "commentaires": [
+        {
+          "id": 0,
+          "utilisateur": "",
+          "message": ""
+        }
+      ],
+      "id": 1
+    },
+    {
+      "titre": "10% de remise immédiate sur votre séjour dans tous les hôtels du parc entre le 30 janvier 2020 et le 10 février 2020",
+      "image": "https://medias.spotern.com/spots/w640/72/72734-1532336916.jpg",
+      "temperature": "",
+      "expireLe": "28/01/2020",
+      "code": "MONCODE",
+      "utilisateur": "Rondoudou",
+      "commentaires": [
+        {
+          "id": 0,
+          "utilisateur": "",
+          "message": ""
+        }
+      ],
+      "id": 2
+    },
+    {
+      "titre": "20% de remise immédiate sur votre séjour dans tous les hôtels du parc entre le 10 février 2020 et le 10 mars 2020",
+      "image": "https://www.pokepedia.fr/images/thumb/e/ee/Roucool_de_Cathy.png/200px-Roucool_de_Cathy.png",
+      "temperature": "",
+      "expireLe": "05/02/2020",
+      "code": "MONCODE",
+      "utilisateur": "Roucoul",
+      "commentaires": [
+        {
+          "id": 0,
+          "utilisateur": "",
+          "message": ""
+        }
+      ],
+      "id": 3
+    },
+    {
+      "titre": "80% de remise immédiate sur votre séjour dans tous les hôtels du parc entre le 10 mars 2020 et le 20 mars 2020",
+      "image": "https://www.pokepedia.fr/images/thumb/f/f2/Racaillou_de_Pierre.png/300px-Racaillou_de_Pierre.png",
+      "temperature": "",
+      "expireLe": "01/03/2020",
+      "code": "MONCODE",
+      "utilisateur": "Racaillou",
+      "commentaires": [
+        {
+          "id": 0,
+          "utilisateur": "",
+          "message": ""
+        }
+      ],
+      "id": 4
+    }
+  ]
+}
